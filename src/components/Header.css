@@ -1,0 +1,18 @@
+.Header {
+    display:flex;
+    justify-content: space-between;
+}
+
+.Header-1{
+    display:flex
+}
+
+ul{
+    display:flex;
+    justify-content: space-evenly;
+}
+ li{
+    list-style-type: none;
+    display:flex;
+    justify-content: space-evenly;
+}
