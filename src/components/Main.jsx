@@ -13,9 +13,9 @@ function Main() {
     <div className='Main'>
         <div className='Main-1'>
             <h1> Make <br /> remote work</h1>
-            <p>  Get your team in sync, no matter your location. <br /> Streamline processes, 
+            <p className='paragraph'>  Get your team in sync, no matter your location. <br /> Streamline processes, 
   create team rituals, and <br /> watch productivity soar.</p>
-  <button>Learn more</button>
+  <button className='b-learn'>Learn more</button>
       <figure className='symbols'>
         <img src={Databiz} alt="Databiz" />
         <img src={Audiophile} alt="Databiz" />
