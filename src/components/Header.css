@@ -24,6 +24,13 @@ ul{
     color:hsl(0, 0%, 41%);
     cursor: pointer;
 }
+li:hover  {
+    color: hsl(0, 0%, 8%);
+}
+
+.arrowdown:hover {
+    color: hsl(0, 0%, 8%);
+}
 
 .h-image img {
     width: 4rem;
@@ -37,6 +44,10 @@ ul{
     margin-left: 2rem;
     color:hsl(0, 0%, 41%);
     cursor: pointer;
+}
+
+.link:hover{
+    color:hsl(0, 0%, 8%)
 }
 
 a{
@@ -54,11 +65,29 @@ a{
     border: 2px solid hsl(0, 0%, 41%);
     cursor: pointer;
 }
-.arrowdown{
+
+.register:hover{
+   
+    color:hsl(0, 0%, 8%);
+    
+    border:2px solid hsl(0, 0%, 8%);
+}
+.arrowdown, .arrowup{
     width: 0.7rem;
     height: 0.4rem;
     margin-top: 0.3rem;
     margin-left: 0.2rem;
     cursor: pointer;
 
+}
+.arrowup{
+    display: none;
+}
+
+li:hover .arrowup{
+    display: block;
+}
+
+li:hover .arrowdown{
+    display: none;
 }

@@ -2,6 +2,7 @@ import React from 'react'
 import Snap from '../assets/images/logo.svg'
 import './Header.css'
 import ArrowDown from '../assets/images/icon-arrow-down.svg'
+import ArrowUp from '../assets/images/icon-arrow-up.svg'
 
 function Header() {
   return (
@@ -13,8 +14,10 @@ function Header() {
 />
             </figure>
             <ul>
-                <li>Features <img src={ArrowDown} className='arrowdown' alt="arrow down" /></li>
-                <li>Company <img src={ArrowDown} className='arrowdown' alt="arrow down" /></li>
+                <li>Features <img src={ArrowDown} className='arrowdown' alt="arrow down" />
+                <img src={ArrowUp} className='arrowup' alt="arrow up" /></li>
+                <li>Company <img src={ArrowDown} className='arrowdown' alt="arrow down" />
+                <img src={ArrowUp} className='arrowup' alt="arrow up" /></li>
                 <li>Careers</li>
                 <li>About</li>
             </ul>
@@ -27,6 +30,8 @@ function Header() {
 
         </div>
     </div>
+
+    
     
     </>
   )

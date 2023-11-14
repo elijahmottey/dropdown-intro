@@ -50,7 +50,7 @@ h1{
     outline: none;
     border: none;
     cursor: pointer;
-    font-size: bold;
+    font-size: 1.0rem;
 
 }
 .b-learn:hover{
