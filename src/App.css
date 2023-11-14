@@ -2,4 +2,24 @@
 
 html {
   font-family: 'Epilogue', 'Verdana', sans-serif;
+  font-size: 18px;
+}
+
+/* Styles for mobile */
+body {
+  /* Mobile styles go here */
+}
+
+/* Media query for screens 375px and above (mobile and larger) */
+@media (min-width: 375px) {
+  body {
+    /* Styles for screens 375px and above */
+  }
+}
+
+/* Media query for screens 1440px and above (desktop) */
+@media (min-width: 1440px) {
+  body {
+    /* Styles for screens 1440px and above (desktop) */
+  }
 }

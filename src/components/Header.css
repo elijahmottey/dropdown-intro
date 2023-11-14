@@ -14,12 +14,15 @@
 ul{
     display:flex;
     justify-content: space-evenly;
+    margin-left: -3rem;
 }
  li{
     list-style-type: none;
     display:flex;
     justify-content: space-evenly;
     margin-left: 2rem;
+    color:hsl(0, 0%, 41%);
+    cursor: pointer;
 }
 
 .h-image img {
@@ -32,6 +35,8 @@ ul{
 }
 .link,.register{
     margin-left: 2rem;
+    color:hsl(0, 0%, 41%);
+    cursor: pointer;
 }
 
 a{
@@ -45,11 +50,15 @@ a{
     width: 6rem;
     height: 2.3rem;
     border-radius: 10px;
+    color:hsl(0, 0%, 41%);
+    border: 2px solid hsl(0, 0%, 41%);
+    cursor: pointer;
 }
 .arrowdown{
-    width: 1rem;
-    height: 0.7rem;
-    margin-top: 0.2rem;
+    width: 0.7rem;
+    height: 0.4rem;
+    margin-top: 0.3rem;
     margin-left: 0.2rem;
+    cursor: pointer;
 
 }
