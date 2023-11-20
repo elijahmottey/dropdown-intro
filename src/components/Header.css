@@ -91,3 +91,18 @@ li:hover .arrowup{
 li:hover .arrowdown{
     display: none;
 }
+
+.icons{
+    width: 0.8rem;
+    height: 0.8rem;
+    margin-top: 0.5rem;
+    margin-right: 1rem;
+    margin-left: -2rem;
+}
+
+.c-list{
+    list-style-type: none;
+    text-align: center;
+    
+    
+}

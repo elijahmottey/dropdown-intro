@@ -2,7 +2,8 @@
     display: flex;
     justify-content: space-between;
 
-    margin:1.5rem;
+    margin:2rem;
+    
 }
 figure{
     width:45%;
@@ -16,8 +17,8 @@ img{
 .Main-1{
     width: 70%;
     text-align: justify;
-    margin-left: 6.1rem;
-    margin-top: 2rem;
+    margin-left: 4.6rem;
+    margin-top: 5rem;
 
 }
 
@@ -38,6 +39,7 @@ h1{
     font-size: 5em;
     text-align: justify;
     font-weight: 700px;
+    line-height: 3.8rem;
 }
 
 .b-learn{
