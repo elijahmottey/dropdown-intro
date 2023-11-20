@@ -36,7 +36,15 @@ function Header() {
             setIsActive(false);
             setIsCompany(false);
           }
-        }});
+        };
+    
+        window.addEventListener('click', handleWindowClick);
+    
+        return () => {
+          window.removeEventListener('click', handleWindowClick);
+        };
+      }, []); // Empty dependency array ensures that the effect runs once during mount and cleans up on unmount
+    
    
   return (
     <>
@@ -49,9 +57,9 @@ function Header() {
             
             <ul>
                 <li ref={activeRef}
-                onClick={(e)=>{e.stopPropagation;setIsActive(!isActive)}} >Features <img src={ArrowDown} className='arrowdown' alt="arrow down" />
+                onClick={(e)=>{e.stopPropagation();setIsActive(!isActive)}} >Features <img src={ArrowDown} className='arrowdown' alt="arrow down" />
                 <img src={ArrowUp} className='arrowup' alt="arrow up" /></li>
-                <li ref={companyRef} onClick={(e)=>{e.stopPropagation;setIsCompany(!isCompany)}}>Company <img src={ArrowDown} className='arrowdown' alt="arrow down" />
+                <li ref={companyRef} onClick={(e)=>{e.stopPropagation();setIsCompany(!isCompany)}}>Company <img src={ArrowDown} className='arrowdown' alt="arrow down" />
                 <img src={ArrowUp} className='arrowup' alt="arrow up" /></li>
                 <li>Careers</li>
                 <li>About</li>
@@ -72,10 +80,10 @@ function Header() {
                     
                     
                    }}>
-                   <li className='c-list' onClick={(e)=>{e.stopPropagation;setIsActive(!isActive)}}><img className='icons' src={Todo} alt="" />Todo List</li>
-                   <li className='c-list' onClick={(e)=>{e.stopPropagation;setIsActive(!isActive)}}><img className='icons' src={Calendar} alt="" />Calender</li>
-                   <li className='c-list' onClick={(e)=>{e.stopPropagation;setIsActive(!isActive)}}><img className='icons' src={Reminder} alt="" />Remainder</li>
-                   <li className='c-list'onClick={(e)=>{e.stopPropagation;setIsActive(!isActive)}}><img className='icons' src={Planning} alt="" />Planning</li>
+                   <li className='c-list' onClick={(e)=>{e.stopPropagation();setIsActive(!isActive)}}><img className='icons' src={Todo} alt="" />Todo List</li>
+                   <li className='c-list' onClick={(e)=>{e.stopPropagation();setIsActive(!isActive)}}><img className='icons' src={Calendar} alt="" />Calender</li>
+                   <li className='c-list' onClick={(e)=>{e.stopPropagation();setIsActive(!isActive)}}><img className='icons' src={Reminder} alt="" />Remainder</li>
+                   <li className='c-list'onClick={(e)=>{e.stopPropagation();setIsActive(!isActive)}}><img className='icons' src={Planning} alt="" />Planning</li>
                    </ul>
                 </Card>
 
@@ -90,7 +98,7 @@ function Header() {
                     <ul style={{display:"block"}}>
                        {
                          company.map((items)=>(
-                            <a href="#" key={items}  onClick={(e)=>{e.stopPropagation;setIsCompany(!isCompany)}}>
+                            <a href="#" key={items}  onClick={(e)=>{e.stopPropagation();setIsCompany(!isCompany)}}>
                                 <li>
                                     {items}</li></a>
 
